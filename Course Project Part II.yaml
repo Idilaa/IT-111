@@ -1,0 +1,56 @@
+# function for adding an item in the inventory
+    add_item(name, quantity, price):
+    if the item already exists:
+        update its quantity and price
+    else:
+        add a new item with the given details
+
+# function for removing an item from the inventory
+    remove_item(name):
+    if the item exists:
+        remove it from the inventory
+    else:
+        display an error message indicating the item is not found
+
+# function for displaying the entire inventory
+    display_inventory():
+    for each item in the inventory:
+        display its name, quantity, and price
+
+# function for searching an item in the inventory
+    search_item(name):
+    if the item exists:
+        display its name, quantity, and price
+    else:
+        display an error message indicating the item is not found
+
+# function for updating the quantity of an existing item
+    update_quantity(name, new_quantity):
+    if the item exists:
+        update its quantity to the new value
+    else:
+        display an error message indicating the item is not found
+
+# function for changing the name of an an item in the inventory
+    change_name(name, new_name):
+    if the item exists:
+        change old name to the new name
+    else:
+        display an error message indicating the name is not found
+
+# Main 
+initialize an empty inventory
+repeat until the user chooses to exit:
+    display menu options:
+        1. Add a New Item
+        2. Remove an Item
+        3. Display Inventory
+        4. Search for an Item
+        5. Update Quantity of an Item
+        6. Change an Item name
+        7. Exit system
+        
+    read user's choice
+    perform corresponding action based on the choice
+    if choice is invalid:
+        display error message: "Invalid choice, please try again"
